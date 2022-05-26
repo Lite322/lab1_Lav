@@ -16,12 +16,10 @@ namespace Lab1
             double b = Convert.ToInt32(Console.ReadLine()); //угол β в градусах
             Console.WriteLine("Результат первой формулы");
             double z1 = Formuly.Form1(a, b); //первая формула
-            double z11 = Math.Round(z1, 3); //округление до 3 знаков после запятой
-            Console.WriteLine(z11);
+            Console.WriteLine(z1);
             Console.WriteLine("Результат второй формулы");
             double z2 = Formuly.Form2(a, b); //вторая формула
-            double z22 = Math.Round(z2, 3); //округление до 3 знаков после запятой
-            Console.WriteLine(z22);
+            Console.WriteLine(z2);
             Console.ReadLine();
         }
     }

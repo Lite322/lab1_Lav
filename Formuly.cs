@@ -21,11 +21,12 @@ namespace lab1_Lav
             double cosa = Math.Cos(a1);
             double cosb = Math.Cos(b1);
             double sina = Math.Sin(a1);
-            double sinb = Math.Cos(b1);
+            double sinb = Math.Sin(b1);
             double braser1 = Math.Pow(cosa - cosb, 2);
             double braser2 = Math.Pow(sina - sinb, 2);
             double z = braser1 - braser2;
-            return z;
+            double z1 = Math.Round(z, 3); //округление до 3 знаков после запятой
+            return z1;
         }
 
         /// <summary>
@@ -40,7 +41,8 @@ namespace lab1_Lav
             double sin = Math.Pow(Math.Sin(braser1), 2) * (-4);
             double cos = Math.Cos(Formuly.ToRad(a + b));
             double z = sin * cos;
-            return z;
+            double z1 = Math.Round(z, 3); //округление до 3 знаков после запятой
+            return z1;
         }
 
         /// <summary>
